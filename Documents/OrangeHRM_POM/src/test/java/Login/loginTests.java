@@ -1,10 +1,15 @@
 package Login;
 
+import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
 import pageObjects.DashboardPage;
 import setUp.setUps;
 
 public class loginTests extends setUps {
+    public loginTests(WebDriver driver) {
+
+    }
+
     @Test(priority = 0)
     public void testALoginPanel () {
         loginPage.verifyLoginPanel (); }

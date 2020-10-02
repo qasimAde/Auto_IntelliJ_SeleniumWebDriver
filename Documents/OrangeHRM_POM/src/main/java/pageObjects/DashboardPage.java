@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 
 public class DashboardPage {
 
+
     public DashboardPage(WebDriver driver) {
         this.driver = driver;
     }
@@ -12,6 +13,8 @@ public class DashboardPage {
     private By welcome = By.id ("welcome");
     private By logoutButton = By.linkText("Logout");
     private By subscriberButton = By.id("Subscriber_link");
+    private By companyImage = By.xpath ("//*[@id=\"branding\"]/a[1]/img");
+    private By dashboardText = By.xpath("//*[@id=\"content\"]/div/div[1]/h1");
 
     public void clickWelcome () {
         //Find the welcome element and click on the welcome button
@@ -30,5 +33,12 @@ public class DashboardPage {
         return new subscriberPage(driver);
 
     }
+    public static void verifyCompanyImage(){
+        //Find the company image element and verify
+        driver.findElement (companyImage).isDisplayed ();}
+
+    public static void verifyDashboardText(){
+        //Find the company image element and verify
+        driver.findElement (dashboardText).getText ();}
 
 }
