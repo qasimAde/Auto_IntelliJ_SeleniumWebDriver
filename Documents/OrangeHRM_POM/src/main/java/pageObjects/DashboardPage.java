@@ -33,11 +33,11 @@ public class DashboardPage {
         return new subscriberPage(driver);
 
     }
-    public static void verifyCompanyImage(){
+    public void verifyCompanyImage(){
         //Find the company image element and verify
         driver.findElement (companyImage).isDisplayed ();}
 
-    public static void verifyDashboardText(){
+    public void verifyDashboardText(){
         //Find the company image element and verify
         driver.findElement (dashboardText).getText ();}
 

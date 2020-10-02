@@ -6,13 +6,17 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+import pageObjects.DashboardPage;
 import pageObjects.LoginPage;
 
 import java.util.concurrent.TimeUnit;
 
 public class setUps {
     protected LoginPage loginPage;
+
+    protected DashboardPage dashboardPage;
     private WebDriver driver;
+
 
     @BeforeTest
     public void setUp(){
