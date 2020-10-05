@@ -10,19 +10,19 @@ public class DashboardPage {
         this.driver=driver;
 
     }
-    private WebDriver driver;
-    private By welcome = By.id ("welcome");
-    private By logoutButton = By.linkText("Logout");
+    private static WebDriver driver;
+    private static By welcome = By.id ("welcome");
+    private static By logoutButton = By.linkText("Logout");
     private By subscriberButton = By.id("Subscriber_link");
     private By companyImage = By.xpath ("//*[@id=\"branding\"]/a[1]/img");
     private By dashboardText = By.xpath("//*[@id=\"content\"]/div/div[1]/h1");
 
-    public void clickWelcome () {
+    public static void clickWelcome() {
         //Find the welcome element and click on the welcome button
         driver.findElement (welcome).click ();
     }
 
-    public LoginPage clickLogout()  {
+    public static LoginPage clickLogout()  {
         //Find the logout element and click on the logout button
         driver.findElement (logoutButton).click ();
         return new LoginPage(driver);
@@ -41,4 +41,11 @@ public class DashboardPage {
     public void verifyDashboardText(){
         //Find the company image element and verify
         driver.findElement (dashboardText).getText ();}
+
+    public void testPendingLeaveRequest(){
+        if (driver.getPageSource ().contains ("01. Kevin Mathews 03-08-2020")) {
+        System.out.println ("Text is present");
+    } else { System.out.println ("Text is absent"); }}
+
+
 }

@@ -23,6 +23,7 @@ public class setUps {
         driver.get("https://opensource-demo.orangehrmlive.com/");
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         loginPage = new LoginPage(driver);
+        dashboardPage = new DashboardPage(driver);
 
 
     }

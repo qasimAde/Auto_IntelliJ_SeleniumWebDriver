@@ -1,5 +1,5 @@
 package SetUp;
-
+//"<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >"
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.PageFactory;
@@ -21,7 +21,7 @@ public class setups {
     }
     @BeforeTest
     public void SetUp(){
-        System.setProperty("WebDriver.chrome.driver", "Resources/chromeDriver.exe");
+        System.setProperty("webdriver.chrome.driver", "resources/chromeDriver.exe");
         driver = new ChromeDriver();
         //Maximise the window
         driver.manage().window().maximize();

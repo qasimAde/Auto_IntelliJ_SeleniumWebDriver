@@ -9,7 +9,6 @@ public class loginTests extends setUps {
     public loginTests(WebDriver driver) {
 
     }
-
     @Test(priority = 0)
     public void testALoginPanel () {
         loginPage.verifyLoginPanel (); }

@@ -1,5 +1,5 @@
 package testLogin;
-
+//"<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >"
 import SetUp.setups;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;

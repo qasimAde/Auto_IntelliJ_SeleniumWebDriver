@@ -1,4 +1,5 @@
 package testSetup;
+//"<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >"
 
 import SetUp.setups;
 import org.openqa.selenium.WebDriver;

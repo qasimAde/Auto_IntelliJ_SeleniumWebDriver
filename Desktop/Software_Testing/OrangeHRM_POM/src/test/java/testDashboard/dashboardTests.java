@@ -1,5 +1,5 @@
 package testDashboard;
-
+//"<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >"
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;

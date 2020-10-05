@@ -17,6 +17,7 @@ public class LoginPage extends setUps {
     private By forgotPassword = By.xpath ("//div[@id='forgotPasswordLink']/a[@href='/index.php/auth/requestPasswordResetCode']");
     private By loginPanel = By.xpath ("//*[@id=\"logInPanelHeading\"]");
 
+
     public void verifyCompanyLogo (){
         //Find the company logo element and verify
         driver.findElement (companyLogo).isDisplayed ();}
@@ -27,7 +28,6 @@ public class LoginPage extends setUps {
         //Find the username element and enter the username
         driver.findElement(loginPanel).getText();
     }
-
     public void enterUsername(String uName){
 
         driver.findElement(username).sendKeys(uName);
